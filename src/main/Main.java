@@ -4,6 +4,7 @@
  */
 package main;
 
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class Main {
@@ -17,7 +18,12 @@ public class Main {
 		
 		//Checkeo que operacion voy a realizar
 		if (input.contains("+")){
-			resultado = calc.Suma();
+			try{
+				resultado = calc.Suma();
+			}
+			catch(InputMismatchException e){
+				System.out.printf("Formato incorrecto");
+			}
 		}
 		else if(input.contains("-")){
 			resultado = calc.Resta();
