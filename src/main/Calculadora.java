@@ -13,8 +13,7 @@ public class Calculadora {
 		num = this.input.length();
 	}
 
-	public float Suma() {
-		//sc.useDelimiter("\\+");
+	public float SumaResta() {
 		float result = sc.nextFloat();
 		for(int i=0;i<num-2;i=i+2){
 			String op = sc.next();
@@ -32,16 +31,4 @@ public class Calculadora {
 		sc.close();
 		return result;
 	}
-	
-	public float Resta(){
-		sc.useDelimiter("\\-");
-		float result = sc.nextFloat();
-		while (sc.hasNext()) {
-			result = result - sc.nextFloat();
-		}
-		sc.close();
-		return result;
-	}
-	
-	
 }

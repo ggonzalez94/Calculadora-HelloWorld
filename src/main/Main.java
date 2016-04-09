@@ -17,16 +17,13 @@ public class Main {
 		float resultado = 0; //resultado de la operacion
 		
 		//Checkeo que operacion voy a realizar
-		if (input.contains("+")){
+		if (input.contains("+")||input.contains("-")){
 			try{
-				resultado = calc.Suma();
+				resultado = calc.SumaResta();
 			}
 			catch(InputMismatchException e){
 				System.out.printf("Formato incorrecto");
 			}
-		}
-		else if(input.contains("-")){
-			resultado = calc.Resta();
 		}
 		else if(input.contains("*")){
 			//resultado = calc.Multiplica();
