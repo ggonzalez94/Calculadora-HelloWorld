@@ -3,14 +3,13 @@ package main;
 import java.util.Scanner;
 
 public class Calculadora {
-	String input;
+	Scanner sc;
 
 	public Calculadora(String input) {
-		this.input = input;
+		sc = new Scanner(input);
 	}
 
 	public float Suma() {
-		Scanner sc = new Scanner(input);
 		sc.useDelimiter("\\+");
 		float result = 0;
 		while (sc.hasNext()) {
@@ -19,4 +18,16 @@ public class Calculadora {
 		sc.close();
 		return result;
 	}
+	
+	public float Resta(){
+		sc.useDelimiter("\\-");
+		float result = sc.nextFloat();
+		while (sc.hasNext()) {
+			result = result - sc.nextFloat();
+		}
+		sc.close();
+		return result;
+	}
+	
+	
 }

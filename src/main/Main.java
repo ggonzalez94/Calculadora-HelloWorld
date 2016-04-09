@@ -14,12 +14,13 @@ public class Main {
 		String input = sc.nextLine();
 		Calculadora calc = new Calculadora(input);
 		float resultado = 0; //resultado de la operacion
+		
 		//Checkeo que operacion voy a realizar
 		if (input.contains("+")){
 			resultado = calc.Suma();
 		}
 		else if(input.contains("-")){
-			//resultado = calc.Resta();
+			resultado = calc.Resta();
 		}
 		else if(input.contains("*")){
 			//resultado = calc.Multiplica();
@@ -31,6 +32,6 @@ public class Main {
 			//resultado = calc.Modulo();
 		}
 		sc.close();
-		System.out.printf("%n%f", resultado);
+		System.out.printf("%n%.2f", resultado);
 	}
 }
