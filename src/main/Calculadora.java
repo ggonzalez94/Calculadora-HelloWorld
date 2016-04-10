@@ -41,25 +41,48 @@ public class Calculadora {
 		default:
 			throw new IllegalArgumentException("Operador invalido.");
 		}
-		if(sc.hasNext())
-			throw new IllegalArgumentException("No se aceptan mas de dos operandos.");
+		if (sc.hasNext())
+			throw new IllegalArgumentException(
+					"No se aceptan mas de dos operandos.");
 		sc.close();
 		return result;
 	}
-	
-	public float porcentaje(){
+
+	public float porcentaje() {
 		float result = sc.nextFloat();
 		String op = sc.next();
 		float B = sc.nextFloat();
 		switch (op) {
 		case "%":
-			result = result * B/100;
+			result = result * B / 100;
 			break;
 		default:
 			throw new IllegalArgumentException("Operador invalido.");
 		}
-		if(sc.hasNext())
-			throw new IllegalArgumentException("No se aceptan mas de dos operandos.");
+		if (sc.hasNext())
+			throw new IllegalArgumentException(
+					"No se aceptan mas de dos operandos.");
+		sc.close();
+		return result;
+	}
+
+	public float divide() {
+		float result = sc.nextFloat();
+		String op = sc.next();
+		float B = sc.nextFloat();
+		if (B == 0) {
+			throw new IllegalArgumentException("No se puede dividir por 0");
+		}
+		switch (op) {
+		case "/":
+			result = result / B;
+			break;
+		default:
+			throw new IllegalArgumentException("Operador invalido.");
+		}
+		if (sc.hasNext())
+			throw new IllegalArgumentException(
+					"No se aceptan mas de dos operandos.");
 		sc.close();
 		return result;
 	}

@@ -31,8 +31,12 @@ public class Main {
 				System.out.printf("Formato incorrecto");
 			}
 		} else if (input.contains("/")) {
-			// resultado = calc.divide()
-		} else if (input.contains("%")){
+			try {
+				resultado = calc.divide();
+			} catch (InputMismatchException e) {
+				System.out.printf("Formato incorrecto");
+			}
+		} else if (input.contains("%")) {
 			try {
 				resultado = calc.porcentaje();
 			} catch (InputMismatchException e) {
@@ -52,6 +56,7 @@ public class Main {
 		input = input.replace("-", " - ");
 		input = input.replace("*", " * ");
 		input = input.replace("%", " % ");
+		input = input.replace("/", " / ");
 		return input;
 	}
 }
