@@ -42,6 +42,8 @@ public class Calculadora {
 		default:
 			throw new IllegalArgumentException("Operador invalido.");
 		}
+		if(sc.hasNext())
+			throw new IllegalArgumentException("No se aceptan mas de dos operandos.");
 		sc.close();
 		return result;
 	}
