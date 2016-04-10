@@ -1,5 +1,14 @@
 MergeNotes
-11-04-2016
+10-04-2016
+(Facundo Maero)
+Merge del tag 0.2.0 al branch Master
+Start Tag: dev-branch-porc
+End Tag : v0.2.0
+Se agregó la funcionalidad: division entre dos operandos. Ej: 100/5=20   
+Comentarios: El merge tuvo conflictos, se arreglaron satisfactoriamente.
+
+MergeNotes
+10-04-2016
 (Gustavo Gonzalez)
 Merge del tag 0.3.0 al branch Master
 Start Tag: dev-branch-porc
