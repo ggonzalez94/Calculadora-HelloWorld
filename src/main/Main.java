@@ -32,11 +32,14 @@ public class Main {
 			}
 		} else if (input.contains("/")) {
 			// resultado = calc.divide()
-		} else {
+		} else if (input.contains("%")){
 			// resultado = calc.modulo();
+		} else {
+			sc.close();
+			throw new IllegalArgumentException("Operacion matematica erronea");
 		}
 		sc.close();
-		System.out.printf("El resultado es: %.2f", resultado);
+		System.out.printf("%nEl resultado es: %.2f", resultado);
 	}
 
 	private static String procesar(String input) { 	// agrega separadores entre

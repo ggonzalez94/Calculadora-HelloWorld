@@ -9,7 +9,6 @@ public class Calculadora {
 
 	public Calculadora(String input) {
 		sc = new Scanner(input);
-		this.input = input.replaceAll("\\s", "");
 	}
 
 	public float sumaResta() {
@@ -24,7 +23,8 @@ public class Calculadora {
 			case "-":
 				result = result - B;
 				break;
-
+			default:
+				throw new IllegalArgumentException("Operador invalido.");
 			}
 		}
 		sc.close();
@@ -33,9 +33,15 @@ public class Calculadora {
 
 	public float multiplica() {
 		float result = sc.nextFloat();
-		sc.next();
+		String op = sc.next();
 		float B = sc.nextFloat();
-		result = result * B;
+		switch (op) {
+		case "*":
+			result = result * B;
+			break;
+		default:
+			throw new IllegalArgumentException("Operador invalido.");
+		}
 		sc.close();
 		return result;
 	}
