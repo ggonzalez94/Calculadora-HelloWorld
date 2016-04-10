@@ -1,0 +1,9 @@
+ReleaseNotes.txt
+10-04-2016
+(Gustavo Gonzalez)
+Notas de la versi—n 2.0.0
+Features presentes: suma y resta entre cualquier cantidad de operandos pudiendo alternarse. Multiplicaci—n y Division entre 2 operandos. Se debe ingresar la operaci—n sin espacios y luego apretar enter.
+Ej : 2+3-6
+Ej : 2*7
+Bugs conocidos El primer operando no puede ser negativo en ninguna de las operaciones
+Comentarios: Al ingresar una operaci—n o sintaxis no permitida se tira una excepci—n acompa–ada del mensaje de error pertinente
