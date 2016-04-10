@@ -24,15 +24,22 @@ public class Main {
 			} catch (InputMismatchException e) {
 				System.out.printf("Formato incorrecto");
 			}
-		} else if (input.contains(" * ")) {
+		} 
+		else if (input.contains(" * ")) {
 			try {
 				resultado = calc.multiplica();
 			} catch (InputMismatchException e) {
 				System.out.printf("Formato incorrecto");
 			}
-		} else if (input.contains("/")) {
-			// resultado = calc.divide()
-		} else if (input.contains("%")){
+		} 
+		else if (input.contains("/")) {
+			try {
+				resultado = calc.divide();
+			} catch (InputMismatchException e) {
+				System.out.printf("Formato incorrecto");
+			}
+		} 
+		else if (input.contains("%")){
 			// resultado = calc.modulo();
 		} else {
 			sc.close();
@@ -47,6 +54,7 @@ public class Main {
 		input = input.replace("+", " + ");
 		input = input.replace("-", " - ");
 		input = input.replace("*", " * ");
+		input = input.replace("/", " / ");
 		return input;
 	}
 }

@@ -5,7 +5,6 @@ import java.util.Scanner;
 public class Calculadora {
 	Scanner sc;
 	String input;
-	float num;
 
 	public Calculadora(String input) {
 		sc = new Scanner(input);
@@ -38,6 +37,23 @@ public class Calculadora {
 		switch (op) {
 		case "*":
 			result = result * B;
+			break;
+		default:
+			throw new IllegalArgumentException("Operador invalido.");
+		}
+		if(sc.hasNext())
+			throw new IllegalArgumentException("No se aceptan mas de dos operandos.");
+		sc.close();
+		return result;
+	}
+	
+	public float divide() {
+		float result = sc.nextFloat();
+		String op = sc.next();
+		float B = sc.nextFloat();
+		switch (op) {
+		case "/":
+			result = result / B;
 			break;
 		default:
 			throw new IllegalArgumentException("Operador invalido.");
