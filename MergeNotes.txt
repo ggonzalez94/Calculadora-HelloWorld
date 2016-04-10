@@ -1,0 +1,9 @@
+MergeNotes
+10­04­2016
+(Facundo Maero)
+Merge del branch 0.1.0 al branch Master
+Start Tag: dev-branch-mult
+End Tag : v0.1.0
+Se agregó la funcionalidad: multiplicacion de dos operandos.    
+Se corrigió el error: Lanzamiento de excepciones al ingresar casos no validos.
+Comentarios: Primer merge satisfactorio, no hubo ningun conflicto.
