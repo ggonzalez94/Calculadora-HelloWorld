@@ -1,7 +1,15 @@
 MergeNotes
-10­04­2016
+10-04-2016
+(Gustavo Gonzalez)
+Merge del branch dev-branch-div al branch rel-branch-2.0.0
+Start Tag:dev-branch-div
+End Tag: v0.2.0
+Se agrego la funcionalidad : division de dos operandos.
+Comentarios: Merge satisfactorio.
+
+10-04-2016
 (Facundo Maero)
-Merge del branch 0.1.0 al branch Master
+Merge del branch dev-branch-mult al branch Master
 Start Tag: dev-branch-mult
 End Tag : v0.1.0
 Se agregó la funcionalidad: multiplicacion de dos operandos.    
