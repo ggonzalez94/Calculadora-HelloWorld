@@ -1,0 +1,8 @@
+ReleaseNotes
+10­04­2016
+(Facundo Maero)
+Notas de la versión 2.1.0
+Features presentes: Calculadora con todas las operaciones solicitadas: suma y resta entre multiples operandos
+		    multiplicacion, division y calculo de porcentaje entre dos operandos.
+Bugs conocidos El primer elemento no puede ser negativo
+Comentarios: Al insertar una operacion no permitida lanza una excepcion
