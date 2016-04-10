@@ -1,0 +1,7 @@
+ReleaseNotes
+10­04­2016
+(Facundo Maero)
+Notas de la versión 1.2.0
+Features presentes: la calculadora suma, resta, multiplica y calcula porcentajes. 
+Bugs conocidos: El primer numero no puede ser negativo
+Comentarios: -
