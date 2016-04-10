@@ -30,4 +30,13 @@ public class Calculadora {
 		sc.close();
 		return result;
 	}
+
+	public float multiplica() {
+		float result = sc.nextFloat();
+		sc.next();
+		float B = sc.nextFloat();
+		result = result * B;
+		sc.close();
+		return result;
+	}
 }

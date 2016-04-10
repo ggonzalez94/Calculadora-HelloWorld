@@ -24,8 +24,12 @@ public class Main {
 			} catch (InputMismatchException e) {
 				System.out.printf("Formato incorrecto");
 			}
-		} else if (input.contains("*")) {
-			// resultado = calc.multiplica();
+		} else if (input.contains(" * ")) {
+			try {
+				resultado = calc.multiplica();
+			} catch (InputMismatchException e) {
+				System.out.printf("Formato incorrecto");
+			}
 		} else if (input.contains("/")) {
 			// resultado = calc.divide()
 		} else {
@@ -39,6 +43,7 @@ public class Main {
 													// operadores
 		input = input.replace("+", " + ");
 		input = input.replace("-", " - ");
+		input = input.replace("*", " * ");
 		return input;
 	}
 }
