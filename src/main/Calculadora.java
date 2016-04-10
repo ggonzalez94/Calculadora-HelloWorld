@@ -51,6 +51,9 @@ public class Calculadora {
 		float result = sc.nextFloat();
 		String op = sc.next();
 		float B = sc.nextFloat();
+		if (B==0){
+			throw new IllegalArgumentException("No se puede dividir por 0");
+		}
 		switch (op) {
 		case "/":
 			result = result / B;
