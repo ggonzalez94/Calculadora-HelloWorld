@@ -1,0 +1,9 @@
+ReleaseNotes
+10­04­2016
+(<Facundo Maero>)
+Notas de la versión 1.1.0
+Features presentes: Suma y resta de numeros positivos de cualquier
+		    longitud, pudiendo intercambiando operaciones.
+		    Multiplicacion entre dos operandos.
+Bugs conocidos: No acepta numeros negativos en el primer operando. 
+Comentarios: Al ingresar operaciones no permitidas da un mensaje de error y finaliza.
