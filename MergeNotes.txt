@@ -1,7 +1,15 @@
 MergeNotes
-10­04­2016
+11-04-2016
+(Gustavo Gonzalez)
+Merge del tag 0.3.0 al branch Master
+Start Tag: dev-branch-porc
+End Tag : v0.3.0
+Se agregó la funcionalidad: porcentaje de dos operandos. Ej: 10%200=20   
+Comentarios: Merge satisfactorio.
+
+10-04-2016
 (Facundo Maero)
-Merge del branch 0.1.0 al branch Master
+Merge del tag 0.1.0 al branch Master
 Start Tag: dev-branch-mult
 End Tag : v0.1.0
 Se agregó la funcionalidad: multiplicacion de dos operandos.    
