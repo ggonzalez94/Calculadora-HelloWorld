@@ -1,8 +1,0 @@
-ReleaseNotes
-10­04­2016
-(Gustavo Castagno)
-Notas de la versión 2.2.0
-Features presentes: Se muestra el resultado de la forma especificada en la consigna y se pueden seguir 
-                    realizando operaciones sin tener que reinicial el programa.
-Bugs conocidos El primer elemento no puede ser negativo
-Comentarios: Al insertar una operacion no permitida lanza una excepcion
